@@ -3,7 +3,7 @@
 #
 
 from wxbot import *
-import sys, os, ConfigParser, json, time
+import sys, ConfigParser, json, time
 
 
 class GFCoaxerBot(WXBot):
@@ -88,7 +88,7 @@ class GFCoaxerBot(WXBot):
             self.lastSpeak = None
         #if group chat
         elif msg['msg_type_id'] == 3:
-            print msg
+            pass#print msg
 
     #every 5 seconds, check if the time since last speak has been over 1 min
     def schedule(self):
